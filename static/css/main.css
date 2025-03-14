@@ -1,0 +1,128 @@
+/* 
++--------------------------------------------------+
+| ___  ___        _          _____   _____  _____  |
+| |  \/  |       (_)        /  __ \ /  ___|/  ___| |
+| | .  . |  __ _  _  _ __   | /  \/ \ `--. \ `--.  |
+| | |\/| | / _` || || '_ \  | |      `--. \ `--. \ |
+| | |  | || (_| || || | | | | \__/\ /\__/ //\__/ / |
+| \_|  |_/ \__,_||_||_| |_|  \____/ \____/ \____/  |
++--------------------------------------------------+                                               
+                                                 */
+body {
+    margin: 0;
+    padding: 0; /* Optional: Removes padding as well */
+    background-color: rgb(63, 63, 63); /* Change to any color */
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+.mainHeader{
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns children (logo and text) vertically */
+    justify-content: start; /* Keeps items aligned to the left */
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    box-sizing: border-box; 
+    background-color: black;
+    display: inline-block;
+}
+
+.mainHeader-generalContent{
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Aligns children (logo and text) vertically */
+    justify-content: start; /* Keeps items aligned to the left */
+    width: 80%;
+    height: 100%;
+}
+
+.mainHeader-logoDiv{
+    height: 100%;
+    display: inline-block;
+    width: auto;
+    aspect-ratio: 1;
+    /* border: 3px solid rgb(225, 0, 255); */
+    box-sizing: border-box; 
+}
+
+.mainHeader-logo{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    /* aspect-ratio: 1; */
+    /* border: 3px solid rgb(225, 0, 255); */
+    /* box-sizing: border-box;  */
+}
+
+.mainHeader-textBoxTitle{
+    width: 200px;
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centers text inside the text box */
+    font-family: "Open Sans", sans-serif;
+}
+
+.mainHeader-textBox{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Centers text inside the text box */
+    font-family: "Open Sans", sans-serif;
+}
+
+.mainHeader-textDivider{
+    height: 60%;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.accountWindow{
+    position: fixed;
+    width: 250px;
+    height: 80px;
+    top: 10px;
+    right: 10px;
+    background-color: grey;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.defaultProfileIcon{
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.accountWindowText{
+    color: rgb(56, 56, 56);
+    width: 180;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Centers text inside the text box */
+    font-family: "Open Sans", sans-serif;
+}
+
+a:link,
+a:visited {
+    color: inherit;  /* Inherits the color from the parent element */
+}

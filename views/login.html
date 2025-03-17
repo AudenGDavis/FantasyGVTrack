@@ -31,23 +31,46 @@
                 <div class="mainHeader-textDivider"></div>
     
                 <div class="mainHeader-textBox">
-                    <h2>About</h2>
+                    <a href="http://{{ .idAddress }}:{{ .port }}/">
+                        <h2>About</h2>
+                    </a>
                 </div>
     
                 <div class="mainHeader-textDivider"></div>
     
                 <div class="mainHeader-textBox">
-                    <h2>Marketplace</h2>
+                    <a href="http://{{ .idAddress }}:{{ .port }}/community">
+                        <h2>Community</h2>
+                    </a>
                 </div>
     
                 <div class="mainHeader-textDivider"></div>
     
                 <div class="mainHeader-textBox">
-                    <h2>Dashboard</h2>
+                    <a href="http://{{ .idAddress }}:{{ .port }}/user">
+                        <h2>Dashboard</h2>
+                    </a>
+                </div>
+    
+                <div class="mainHeader-textDivider"></div>
+    
+                <div class="mainHeader-textBox">
+                    <a href="http://{{ .idAddress }}:{{ .port }}/athletes">
+                        <h2>Athletes</h2>
+                    </a>
                 </div>
             </div>
 
-            
+            <div class="center-div">
+                <p class="h1-body">Login</p>
+                <p>If you dt have an account, see here for information on how to signup:</p>
+                <a href = "http://{{ .idAddress }}:{{ .port }}/signup" style = "text-decoration: underline">Sign Up</a>
+                <p class="h2-body">Username</p>
+                <input type="text" name="username" placeholder="Username" class="textField">
+                <p class="h2-body">Password</p>
+                <input type="text" name="password" placeholder="Password" class="textField">
+                
+            </div>
         </div>
     </body>
 </html>
